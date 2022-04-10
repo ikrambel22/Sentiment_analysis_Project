@@ -4,7 +4,7 @@ Preforming Sentiment detection on several texts using machine learning algorithm
 methodology followed in the project is represented in this map:
 
 
-<img width="413" alt="image" src="https://user-images.githubusercontent.com/66137466/162642629-096618b6-d47d-456a-ab22-36624309cb41.PNG">
+<img  alt="image" src="https://user-images.githubusercontent.com/66137466/162642629-096618b6-d47d-456a-ab22-36624309cb41.PNG">
 
 **1-Data unserstanding**
 We used the Aireline sentiment analysis from kaggle we've focused on two features:
@@ -16,6 +16,7 @@ This is one of the most important steps in any modelisation probleme, data prepr
 
 **3-Data Augmentation**
 Data augmentation techniques are used to generate additional, synthetic data using the data you have. Augmentation methods are super popular in computer vision applications but they are just as powerful for NLP. but it should be done carefully due to the grammatical structure of the text. In our case we use EDA(Easy Data Augmentation) method.The method is used before training. A new augmented dataset is generated beforehand and later fed into data loaders to train the model.
+
 ![Capture](https://user-images.githubusercontent.com/66137466/162643350-5b7c6677-d4bb-4024-a1af-8b15d3fb41df.PNG)
 
 
@@ -43,6 +44,7 @@ For this problem, we used 3 classification models:
  
  **Result**:
 Using ROC-AUC curve, we found that SVM  the best model, because it was able to distinguish more or less between the Sentiments.
+
 ![Capture](https://user-images.githubusercontent.com/66137466/162643830-d1418ae1-685b-411d-baef-5f8bf8adb0c4.PNG)
 
 
