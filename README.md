@@ -4,7 +4,7 @@ Preforming Sentiment detection on several texts using machine learning algorithm
 methodology followed in the project is represented in this map:
 
 
-<img  alt="image" src="https://user-images.githubusercontent.com/66137466/162642629-096618b6-d47d-456a-ab22-36624309cb41.PNG">
+<img  alt="image" src="https://user-images.githubusercontent.com/66137466/162644007-3c30fc0e-e109-4329-a339-3152b0545037.PNG">
 
 **1-Data unserstanding**
 We used the Aireline sentiment analysis from kaggle we've focused on two features:
