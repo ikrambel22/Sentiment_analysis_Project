@@ -1,6 +1,6 @@
 import pickle
 #from turtle import width
-from matplotlib import colors
+#from matplotlib import colors
 import streamlit as st
 import numpy as np
 from streamlit_option_menu import option_menu
