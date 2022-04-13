@@ -409,11 +409,9 @@ def main():
                 st.write('\t')
                 st.title('Linkdin ')
                 st.markdown(" [Ikram Belgas](https://www.linkedin.com/in/ikram-b-863612183/)")
-                st.markdown(" [Laila Boullous]()")
-   
-    
-    st.text("")
-    st.write('Check Our kaggle notebook : [click here](https://www.kaggle.com/code/ikrambelgas/sentiment-analysis/notebook)')
+                st.markdown(" [Laila Boullous](https://www.linkedin.com/in/laila-boullous-88b3361a3/)")
+        st.text("")
+        st.write('Check Our kaggle notebook : [click here](https://www.kaggle.com/code/ikrambelgas/sentiment-analysis/notebook)')
          
         
     
