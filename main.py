@@ -12,9 +12,9 @@ from streamlit_echarts import st_echarts
 import json
 
 
-tokenizer = pickle.load(open('tokenizer.pkl','rb'))
+
 model=pickle.load(open('sentiment_analysis.pickle','rb'))
-vectorizer=pickle.load(open('TF_IDF_vectorizer.pickle','rb'))
+vectorizer=pickle.load(open('vectorizer.pkl','rb'))
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_page_config(layout="wide")
 
