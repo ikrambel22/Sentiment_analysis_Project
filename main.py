@@ -11,7 +11,9 @@ import seaborn as sns
 from streamlit_echarts import st_echarts
 import json
 
+from nltk.tokenize import TweetTokenizer
 
+tokenizer = TweetTokenizer()
 tokenizer1=pickle.load(open('tokenizer.pkl','rb'))
 model=pickle.load(open('sentiment_analysis.pickle','rb'))
 vectorizer=pickle.load(open('vectorizer.pickle','rb'))
