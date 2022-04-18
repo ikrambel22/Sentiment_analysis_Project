@@ -10,10 +10,10 @@ import matplotlib as plt
 import seaborn as sns
 from streamlit_echarts import st_echarts
 import json
-
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 model=pickle.load(open('sentiment_analysis.pickle','rb'))
-vectorizer=pickle.load(open('TF_IDF_vectorizer.pickle','rb'))
+vectorizer=TfidfVectorizer(pickle.load(open('TF_IDF_vectorizer.pickle','rb')))
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_page_config(layout="wide")
 
