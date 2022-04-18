@@ -77,7 +77,7 @@ def main():
         #prediction code
         if st.button('Detect Sentiment'):
             #vectorize the text
-            test = vectorizer.transform(str(text))
+            test = vectorizer.transform([text])
             #var_test=toNumpyArray(test)
             l=model.predict(test)
             #output=round(l[0],2)
