@@ -10,7 +10,7 @@ import matplotlib as plt
 import seaborn as sns
 from streamlit_echarts import st_echarts
 import json
-from sklearn.feature_extraction.text import TfidfVectorizer
+
 
 model=pickle.load(open('sentiment_analysis.pickle','rb'))
 vectorizer=pickle.load(open('TF_IDF_vectorizer.pickle','rb'))
@@ -77,7 +77,7 @@ def main():
         #prediction code
         if st.button('Detect Sentiment'):
             #vectorize the text
-            test = vectorizer.fit_transform([text])
+            test = vectorizer.transform(text)
             #var_test=toNumpyArray(test)
             l=model.predict(test)
             #output=round(l[0],2)
