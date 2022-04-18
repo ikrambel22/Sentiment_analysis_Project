@@ -13,7 +13,7 @@ import json
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 model=pickle.load(open('sentiment_analysis.pickle','rb'))
-vectorizer=TfidfVectorizer(pickle.load(open('TF_IDF_vectorizer.pickle','rb')))
+vectorizer=pickle.load(open('TF_IDF_vectorizer.pickle','rb'))
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_page_config(layout="wide")
 
@@ -77,7 +77,7 @@ def main():
         #prediction code
         if st.button('Detect Sentiment'):
             #vectorize the text
-            test = vectorizer.transform([text])
+            test = vectorizer.fit_transform([text])
             #var_test=toNumpyArray(test)
             l=model.predict(test)
             #output=round(l[0],2)
