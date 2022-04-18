@@ -13,7 +13,7 @@ import json
 
 
 model=pickle.load(open('sentiment_analysis.pickle','rb'))
-vectorizer=pickle.load(open('vectorizer.pickle','rb'))
+vectorizer=pickle.load(open('countvectorizer.pickle','rb'))
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_page_config(layout="wide")
 
